@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-BP9EY1LWM5"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-BP9EY1LWM5');
+    </script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VoksFit!</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+</head>
+<body>
+     <!-- Header -->
+    <header>
+        <h1><a href="#">VoksFit!</a></h1>
+        <nav>
+            <ul>
+                <li><a href="#about-us">About Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Hero Section -->
+        <section class="hero" data-aos="zoom-in" data-aos-duration="1000" data-aos-easing="ease-out">
+            <div class="container">
+                <h2 style="color: white;">Hello Voks-Friends!</h2>
+                <p style="color: white;">Make Your Outfit Stylish More Gorgeous As Your Major Vibes!</p>
+                <button class="button">Pick Your Style</button>
+            </div>
+        </section>
+
+        <!-- Departments Section -->
+        <section id="departments" class="departments">
+            <h3 data-aos="fade-down" data-aos-duration="1000">Find Your Major of Your Own Departments</h3>
+            <div class="department-grid" data-aos="zoom-in-down" data-aos-duration="1000">
+                <div class="department" data-aos="flip-left" data-aos-delay="200">
+                    <a href="index_soshum.html">
+                        <img src="soshum2.jpg" alt="Department Social of Applied Humanities">
+                        <h4>Department Social of Applied Humanities</h4>
+                    </a>
+                </div>
+                <div class="department" data-aos="flip-right" data-aos-delay="400">
+                    <a href="index_administrasi.html">
+                        <img src="adm2.jpg" alt="Department of Administration and Applied Business">
+                        <h4>Department of Administration and Applied Business</h4>
+                    </a>
+                </div>
+                <div class="department" data-aos="flip-left" data-aos-delay="600">
+                    <a href="index_kesehatan.html">
+                        <img src="kesehatan2.jpg" alt="Department of Applied Health">
+                        <h4>Department of Applied Health</h4>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <script>
+            // Menambahkan event listener untuk tombol "Pick Your Style"
+            document.addEventListener('DOMContentLoaded', function() {
+                const pickStyleButton = document.querySelector('.button');
+                pickStyleButton.addEventListener('click', function() {
+                    const departmentsSection = document.querySelector('.departments');
+                    if (departmentsSection) {
+                        departmentsSection.scrollIntoView({ behavior: 'smooth' });
+                    } else {
+                        console.error('Elemen dengan class .departments tidak ditemukan.');
+                    }
+                });
+            });
+        </script>
+
+        <!-- Recommendations Section -->
+        <section class="recommendations">
+            <h2 data-aos="fade-down" data-aos-duration="1000">Be Comfy and Fashionable!</h2>
+            <div class="recommendation-grid">
+                <div class="recommendation" data-aos="zoom-in" data-aos-delay="200"><img src="fit1.jpg" alt="Outfit Recommendation"></div>
+                <div class="recommendation" data-aos="zoom-in" data-aos-delay="400"><img src="fit2.jpg" alt="Outfit Recommendation"></div>
+                <div class="recommendation" data-aos="zoom-in" data-aos-delay="600"><img src="fit3.jpg" alt="Outfit Recommendation"></div>
+            </div>
+            <p data-aos="fade-up" data-aos-duration="1000">Our References to Recommendation for Your Outfit Style.</p>
+            <div class="recommendation-grid">
+                <div class="recommendation" data-aos="flip-left" data-aos-delay="200"><img src="fit4.jpg" alt="Outfit Recommendation"></div>
+                <div class="recommendation" data-aos="flip-right" data-aos-delay="400"><img src="fit5.jpg" alt="Outfit Recommendation"></div>
+                <div class="recommendation" data-aos="flip-left" data-aos-delay="600"><img src="fit6.jpg" alt="Outfit Recommendation"></div>
+            </div>
+        </section>
+
+        <!-- About Us Section -->
+        <section id="about-us">
+            <h2 data-aos="fade-down" data-aos-duration="1000">About Us</h2>
+            <div class="team" data-aos="fade-up" data-aos-duration="1000">
+                <div class="team-member" data-aos="zoom-in" data-aos-delay="200">
+                    <a href="https://www.instagram.com/salwanzhfh" target="_blank">
+                        <img src="asset/salwa.png" alt="Salwa Zahra N">
+                        <p>Salwa Zahra N - Project Manager</p>
+                    </a>
+                </div>
+                <div class="team-member" data-aos="zoom-in" data-aos-delay="400">
+                    <a href="https://www.instagram.com/vana.xyara" target="_blank">
+                        <img src="asset/diva.png" alt="Diva Cahya Fadillah">
+                        <p>Diva Cahya Fadillah - UI/UX Designer</p>
+                    </a>
+                </div>
+                <div class="team-member" data-aos="zoom-in" data-aos-delay="600">
+                    <a href="https://www.instagram.com/elgaaalfiras" target="_blank">
+                        <img src="asset/elgari.png.jpg" alt="Muhammad Elgari Alfiras">
+                        <p>Muhammad Elgari Alfiras - Software Developer</p>
+                    </a>
+                </div>
+                <div class="team-member" data-aos="zoom-in" data-aos-delay="800">
+                    <a href="https://www.instagram.com/sailornano" target="_blank">
+                        <img src="asset/faiza.png.jpg" alt="Faiza Kamila Khairunnisa">
+                        <p>Faiza Kamila Khairunnisa - Software Developer</p>
+                    </a>
+                </div>
+                <div class="team-member" data-aos="zoom-in" data-aos-delay="1000">
+                    <a href="https://www.instagram.com/rafarfdh_" target="_blank">
+                        <img src="asset/rafah.png" alt="Rafa Rifdah Fadillah">
+                        <p>Rafa Rifdah Fadillah - Researcher</p>
+                    </a>
+                </div>
+            </div>
+        </section>
+        
+        <!-- VoksFit Section -->
+        <section class="voksfit-section">
+            <div class="line" data-aos="slide-right" data-aos-duration="1000"></div>
+            <p data-aos="zoom-in" data-aos-duration="1000">
+                VoksFit! adalah sebuah Website khusus yang diciptakan khusus untuk Mahasiswa/i Program Pendidikan Vokasi Universitas Indonesia, 
+                yang sering kali merasa bingung dalam memilih gaya pakaian sesuai dengan Jurusan mereka masing-masing.
+            </p>
+            <p data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="200">
+                Kami hadir untuk membantu Anda dengan menyediakan beragam pilihan outfit yang mencerminkan karakteristik setiap asal jurusan Anda. 
+                Dan memahami bahwa setiap jurusan memiliki karakteristik dan kebutuhan yang berbeda, sehingga kami hadir untuk memberikan solusi fashion yang tepat.
+            </p>
+            <div class="line" data-aos="slide-left" data-aos-duration="1000"></div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer data-aos="fade-up" data-aos-duration="1000">
+        <p>2024 VoksFit! All Rights Reserved | Media Production Universitas Indonesia</p>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+</body>
+</html>
